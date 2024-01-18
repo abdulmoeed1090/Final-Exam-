@@ -1,0 +1,38 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+//Forward decleratiopn 
+void parenthesize(string input,int n);
+//Main function
+int main(){
+  
+  //Variables
+  string input;
+  int n;
+  //Calling the function
+  parenthesize(input,n);
+  
+  return 0;
+}
+
+//Defining the function
+void parenthesize(string input,int n){
+
+  //taking input from user
+  cout<<"Enter the string (of max size 100): ";
+  getline(cin,input);
+  cout<<"Enter the number of parenthesize : ";
+  cin>>n;
+  cout<<"The output is : \n"; 
+  
+     //Displaying the result
+      for(int i=0;i<n;i++){
+       cout<<"(";
+      }
+      cout<<input;
+      for(int i=0;i<n;i++){
+       cout<<")";
+      }
+     cout<<"\n";
+}
+
